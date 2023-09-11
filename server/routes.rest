@@ -1,0 +1,49 @@
+POST  http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "username" : "jiegerhgjreog",
+    "email" : "aa45l@gmail.com",
+    "password" : "11zfzrfb", 
+    "location" : "Sousse"
+}
+
+###
+
+GET http://localhost:3000/food
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email" : "aa45l@gmail.com",
+    "password" : "11zfzrfb"
+}
+
+###
+POST http://localhost:3000/foods/create
+Content-Type: application/json
+
+{
+    "name" : "spaghetti",
+    "price" : 3,
+    "restaurant" : "64db45c63718091f93a278ab"
+}
+
+###
+GET http://localhost:3000/foods/all
+
+
+###
+DELETE http://localhost:3000/foods/delete/64db344c7a9a6fa83302749f
+
+###
+POST http://localhost:3000/restaurants/find_by_name
+Content-Type: application/json
+
+{
+    "name" : "Chez maatug"
+}
+
+###
+DELETE  http://localhost:3000/restaurants/delete/64db45c63718091f93a278ab
